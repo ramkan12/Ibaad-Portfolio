@@ -1,103 +1,134 @@
+import React from "react";
 import Image from "next/image";
+import "./globals.css";
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+const Home: React.FC = () => (
+  <>
+    <nav className="navbar">
+      <a className="nav-btn" href="#hero">Home</a>
+      <a className="nav-btn" href="#about">About</a>
+      <a className="nav-btn" href="#projects">Projects</a>
+      <a className="nav-btn" href="#experience">Experience</a>
+      <a className="nav-btn" href="#resume">Resume</a>
+      <a className="nav-btn" href="#contact">Contact</a>
+    </nav>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="hero" id="hero">
+      <Image src="/ibaad.jpeg" alt="Ibaad Khan" width={200} height={200} />
+      <h1>Ibaad Khan</h1>
+      <p className="subtitle">Data Analyst & Web Development Student</p>
+      <p className="tagline">Turning data into insights and building web solutions.</p>
+      <a href="#projects" className="resume-link">View Projects</a>
     </div>
-  );
-}
+
+    <div className="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a dedicated, results-oriented <strong>Business Data Analyst</strong> with a passion for leveraging data to drive strategic decision-making. I bring a wealth of experience in UAT testing, data analysis, and visualization to the table.
+        </p>
+        <p>
+          In my current role at Citigroup, I excel at streamlining testing processes through the integration of new tools. I'm adept at gathering and documenting requirements to implement analytics reports, ensuring alignment with organizational goals and regulatory standards.
+        </p>
+        <ul>
+          <li><strong>Location:</strong> Greater Tampa Bay Area (Remote or In Person)</li>
+          <li><strong>Services:</strong> Business Analytics, Data Reporting, Financial Reporting, Database Development, Project Management</li>
+          <li><strong>Contact for pricing</strong></li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div className="projects-list">
+          <div className="project-card">
+            <h3>Sales Dashboard</h3>
+            <p>Interactive dashboard visualizing sales data using Power BI.</p>
+          </div>
+          <div className="project-card">
+            <h3>Customer Insights</h3>
+            <p>Python analysis of customer data to find trends and patterns.</p>
+          </div>
+          <div className="project-card">
+            <h3>Personal Portfolio Website</h3>
+            <p>This website! Built with React and CSS as part of my web dev course.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <div className="experience-list">
+          <div className="experience-card">
+            <img src="/pwc.png" alt="PwC logo" className="company-logo" />
+            <h3>Data Risk Management - Senior Associate <span>@ PwC</span></h3>
+            <p><em>May 2025 – Present · Tampa, FL (Contract)</em></p>
+            <p>Skills: Tableau, Data Analytics, Data Lineage, Enterprise Risk Management, Data Quality</p>
+          </div>
+          <div className="experience-card">
+            <img src="/alvarez.png" alt="Alvarez & Marsal logo" className="company-logo" />
+            <h3>Data Reporting Analyst <span>@ Alvarez & Marsal</span></h3>
+            <p><em>Jun 2024 – May 2025 · Tampa, FL (Full-time)</em></p>
+            <p>Skills: Microsoft Power BI, Data Analytics, Asset Management, DAX, Microsoft Excel</p>
+          </div>
+          <div className="experience-card">
+            <img src="/citi.png" alt="Citi logo" className="company-logo" />
+            <h3>Business Data Analyst <span>@ Citi</span></h3>
+            <p><em>Jan 2023 – Jun 2024 · Tampa, FL (Contract, Hybrid)</em></p>
+            <p>Skills: Requirements Analysis, Data Validation, Test Scripts, SQL, Jira, Financial Reporting, User Acceptance Testing, Documentation, EDA, Knime</p>
+          </div>
+          <div className="experience-card">
+            <img src="/acts.png" alt="ACTS logo" className="company-logo" />
+            <h3>Data Analyst <span>@ ACTS - Agency for Community Treatment Services</span></h3>
+            <p><em>Feb 2022 – Jan 2023 · Tampa, FL (Full-time)</em></p>
+            <p>Skills: SQL, Microsoft Excel, Ad Hoc Reporting, Data Analytics</p>
+          </div>
+          <div className="experience-card">
+            <img src="/universal.png" alt="Universal Academy logo" className="company-logo" />
+            <h3>Volleyball Coach <span>@ Universal Academy</span></h3>
+            <p><em>Feb 2020 – Jan 2023 · Tampa, FL (Full-time)</em></p>
+          </div>
+          <div className="experience-card">
+            <img src="/podium.png" alt="Podium Education logo" className="company-logo" />
+            <h3>Data Analyst <span>@ Podium Education</span></h3>
+            <p><em>May 2021 – Aug 2021 · Tampa, FL (Internship)</em></p>
+            <p>Skills: Tableau, SQL, Microsoft Excel</p>
+          </div>
+          <div className="experience-card">
+            <img src="/usf.png" alt="University of South Florida logo" className="company-logo" />
+            <h3>Data Analytics Bootcamp <span>@ University of South Florida</span></h3>
+            <p><em>Mar 2021 – May 2021</em></p>
+            <p>Skills: Data Analytics</p>
+          </div>
+          <div className="experience-card">
+            <img src="/kaa.png" alt="Khan, Arndt & Associates logo" className="company-logo" />
+            <h3>Data Entry Analyst <span>@ Khan, Arndt & Associates</span></h3>
+            <p><em>May 2019 – Jul 2019 · St. Petersburg, FL (Full-time)</em></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume">
+        <h2>Resume</h2>
+        <p>
+          Download my resume to learn more about my experience and skills.
+        </p>
+        <a href="/resume.pdf" className="resume-link" download>Download Resume (PDF)</a>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Let's connect! Reach out via email or find me on LinkedIn and GitHub.</p>
+        <div className="contact-info">
+          <a href="mailto:ibaad@example.com">Email</a>
+          <a href="https://linkedin.com/in/ibaadkhan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      &copy; 2025 Ibaad Khan. All rights reserved.
+    </footer>
+  </>
+);
+
+export default Home;

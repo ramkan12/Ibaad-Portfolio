@@ -1,26 +1,210 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #101624;
+  color: #e0e6f0;
+}
+
+.navbar {
+  background: none;
+  color: #fff;
+  padding: 1.5em 0 1em 0;
+  text-align: center;
+  box-shadow: none;
+  position: static;
+}
+
+.navbar a,
+.nav-btn {
+  color: #7dd3fc;
+  margin: 0 1.2em;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.2em;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.navbar a:hover,
+.nav-btn:hover {
+  color: #38bdf8;
+  border-bottom: 2px solid #38bdf8;
+  text-shadow: 0 0 8px #38bdf8;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+.hero {
+  text-align: center;
+  padding: 3em 1em 2em 1em;
+  background: linear-gradient(120deg, #0f172a 0%, #1e293b 100%);
+  color: #fff;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  margin-bottom: 2em;
+}
+
+.hero img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  border: 4px solid #38bdf8;
+  object-fit: cover;
+  box-shadow: 0 0 24px #38bdf8aa;
+}
+
+.hero h1 {
+  margin-bottom: 0.2em;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: #7dd3fc;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.tagline {
+  color: #a5b4fc;
+  margin-bottom: 1.5em;
+}
+
+.resume-link {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.6em 1.8em;
+  background: linear-gradient(90deg, #38bdf8 0%, #818cf8 100%);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px #38bdf888;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.resume-link:hover {
+  background: linear-gradient(90deg, #818cf8 0%, #38bdf8 100%);
+  box-shadow: 0 4px 16px #818cf888;
+}
+
+h2 {
+  margin-top: 0.5em;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+section {
+  margin-bottom: 2.5em;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5em;
+}
+
+.project-card {
+  background: #181f2a;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #38bdf822;
+  padding: 1.2em;
+  border-left: 4px solid #38bdf8;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 24px #38bdf844;
+  border-left: 4px solid #818cf8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info a {
+  color: #7dd3fc;
+  text-decoration: none;
+  margin-right: 1.2em;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.contact-info a:hover {
+  color: #38bdf8;
+  text-shadow: 0 0 8px #38bdf8;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5em 0;
+  background: #181f2a;
+  color: #7dd3fc;
+  border-radius: 24px 24px 0 0;
+  margin-top: 2em;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-bottom: 2em;
+}
+
+.experience-card {
+  background: #181f2a;
+  border-left: 4px solid #38bdf8;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  box-shadow: 0 2px 12px #38bdf822;
+}
+
+.experience-card h3 {
+  margin: 0 0 0.3em 0;
+  font-size: 1.15em;
+  color: #7dd3fc;
+  font-weight: 600;
+}
+
+.experience-card h3 span {
+  color: #a5b4fc;
+  font-weight: 400;
+  font-size: 0.95em;
+}
+
+.experience-card p {
+  margin: 0.2em 0 0.2em 0;
+  color: #e0e6f0;
+  font-size: 1em;
+}
+
+.experience-card em {
+  color: #38bdf8;
+  font-size: 0.95em;
+}
+
+.company-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .container { padding: 1em 0.5em; }
+  .hero { padding: 2em 0.5em 1em 0.5em; }
+  .projects-list { grid-template-columns: 1fr; }
 }
