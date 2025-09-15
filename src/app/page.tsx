@@ -13,7 +13,7 @@ const Home: React.FC = () => (
     </nav>
 
     <div className="hero" id="hero">
-      <Image src="/ibaad.png" alt="Ibaad Khan" width={200} height={200} />
+      <Image src="/ibaad.jpeg" alt="Ibaad Khan" width={200} height={200} />
       <h1>Ibaad Khan</h1>
       <p className="subtitle">Data Analyst & Web Development Student</p>
       <p className="tagline">Turning data into insights and building web solutions.</p>
