@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import "./globals.css";
 
 const Home: React.FC = () => (
   <>
@@ -117,7 +116,7 @@ const Home: React.FC = () => (
 
       <section id="contact">
         <h2>Contact</h2>
-        <p>Let's connect! Reach out via email or find me on LinkedIn and GitHub.</p>
+        <p>Let&apos;s connect! Reach out via email or find me on LinkedIn and GitHub.</p>
         <div className="contact-info">
           <a href="mailto:ibaad@example.com">Email</a>
           <a href="https://linkedin.com/in/ibaadkhan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
