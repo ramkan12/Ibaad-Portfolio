@@ -14,7 +14,7 @@ const Home: React.FC = () => (
     </nav>
 
     <div className="hero" id="hero">
-      <Image src="/ibaad.jpeg" alt="Ibaad Khan" width={200} height={200} />
+      <Image src="/ibaad.png" alt="Ibaad Khan" width={200} height={200} />
       <h1>Ibaad Khan</h1>
       <p className="subtitle">Data Analyst & Web Development Student</p>
       <p className="tagline">Turning data into insights and building web solutions.</p>
@@ -28,7 +28,7 @@ const Home: React.FC = () => (
           I am a dedicated, results-oriented <strong>Business Data Analyst</strong> with a passion for leveraging data to drive strategic decision-making. I bring a wealth of experience in UAT testing, data analysis, and visualization to the table.
         </p>
         <p>
-          In my current role at Citigroup, I excel at streamlining testing processes through the integration of new tools. I'm adept at gathering and documenting requirements to implement analytics reports, ensuring alignment with organizational goals and regulatory standards.
+          In my current role at Citigroup, I excel at streamlining testing processes through the integration of new tools. I am adept at gathering and documenting requirements to implement analytics reports, ensuring alignment with organizational goals and regulatory standards.
         </p>
         <ul>
           <li><strong>Location:</strong> Greater Tampa Bay Area (Remote or In Person)</li>
@@ -59,48 +59,48 @@ const Home: React.FC = () => (
         <h2>Experience</h2>
         <div className="experience-list">
           <div className="experience-card">
-            <img src="/pwc.png" alt="PwC logo" className="company-logo" />
+            <Image src="/pwc.png" alt="PwC logo" className="company-logo" width={60} height={30} />
             <h3>Data Risk Management - Senior Associate <span>@ PwC</span></h3>
             <p><em>May 2025 – Present · Tampa, FL (Contract)</em></p>
             <p>Skills: Tableau, Data Analytics, Data Lineage, Enterprise Risk Management, Data Quality</p>
           </div>
           <div className="experience-card">
-            <img src="/alvarez.png" alt="Alvarez & Marsal logo" className="company-logo" />
+            <Image src="/alvarez.png" alt="Alvarez & Marsal logo" className="company-logo" width={60} height={30} />
             <h3>Data Reporting Analyst <span>@ Alvarez & Marsal</span></h3>
             <p><em>Jun 2024 – May 2025 · Tampa, FL (Full-time)</em></p>
             <p>Skills: Microsoft Power BI, Data Analytics, Asset Management, DAX, Microsoft Excel</p>
           </div>
           <div className="experience-card">
-            <img src="/citi.png" alt="Citi logo" className="company-logo" />
+            <Image src="/citi.png" alt="Citi logo" className="company-logo" width={60} height={30} />
             <h3>Business Data Analyst <span>@ Citi</span></h3>
             <p><em>Jan 2023 – Jun 2024 · Tampa, FL (Contract, Hybrid)</em></p>
             <p>Skills: Requirements Analysis, Data Validation, Test Scripts, SQL, Jira, Financial Reporting, User Acceptance Testing, Documentation, EDA, Knime</p>
           </div>
           <div className="experience-card">
-            <img src="/acts.png" alt="ACTS logo" className="company-logo" />
+            <Image src="/acts.png" alt="ACTS logo" className="company-logo" width={60} height={30} />
             <h3>Data Analyst <span>@ ACTS - Agency for Community Treatment Services</span></h3>
             <p><em>Feb 2022 – Jan 2023 · Tampa, FL (Full-time)</em></p>
             <p>Skills: SQL, Microsoft Excel, Ad Hoc Reporting, Data Analytics</p>
           </div>
           <div className="experience-card">
-            <img src="/universal.png" alt="Universal Academy logo" className="company-logo" />
+            <Image src="/universal.png" alt="Universal Academy logo" className="company-logo" width={60} height={30} />
             <h3>Volleyball Coach <span>@ Universal Academy</span></h3>
             <p><em>Feb 2020 – Jan 2023 · Tampa, FL (Full-time)</em></p>
           </div>
           <div className="experience-card">
-            <img src="/podium.png" alt="Podium Education logo" className="company-logo" />
+            <Image src="/podium.png" alt="Podium Education logo" className="company-logo" width={60} height={30} />
             <h3>Data Analyst <span>@ Podium Education</span></h3>
             <p><em>May 2021 – Aug 2021 · Tampa, FL (Internship)</em></p>
             <p>Skills: Tableau, SQL, Microsoft Excel</p>
           </div>
           <div className="experience-card">
-            <img src="/usf.png" alt="University of South Florida logo" className="company-logo" />
+            <Image src="/usf.png" alt="University of South Florida logo" className="company-logo" width={60} height={30} />
             <h3>Data Analytics Bootcamp <span>@ University of South Florida</span></h3>
             <p><em>Mar 2021 – May 2021</em></p>
             <p>Skills: Data Analytics</p>
           </div>
           <div className="experience-card">
-            <img src="/kaa.png" alt="Khan, Arndt & Associates logo" className="company-logo" />
+            <Image src="/kaa.png" alt="Khan, Arndt & Associates logo" className="company-logo" width={60} height={30} />
             <h3>Data Entry Analyst <span>@ Khan, Arndt & Associates</span></h3>
             <p><em>May 2019 – Jul 2019 · St. Petersburg, FL (Full-time)</em></p>
           </div>
